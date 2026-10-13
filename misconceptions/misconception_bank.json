@@ -1,0 +1,109 @@
+[
+  {
+    "misconception_id": "power_set_means_original_set",
+    "domain": "sets",
+    "description": "Treats the power set as the original set rather than the set of all subsets.",
+    "behavioral_signatures": [
+      "returns the original set",
+      "describes elements instead of subsets"
+    ],
+    "prerequisites": [
+      "subset"
+    ]
+  },
+  {
+    "misconception_id": "forgets_empty_set",
+    "domain": "sets",
+    "description": "Omits the empty set when listing subsets or a power set.",
+    "behavioral_signatures": [
+      "power set missing empty set"
+    ],
+    "prerequisites": [
+      "subset",
+      "empty_set"
+    ]
+  },
+  {
+    "misconception_id": "elements_are_subsets",
+    "domain": "sets",
+    "description": "Lists individual elements without set braces as members of a power set.",
+    "behavioral_signatures": [
+      "uses elements where subsets are required"
+    ],
+    "prerequisites": [
+      "set_notation",
+      "subset"
+    ]
+  },
+  {
+    "misconception_id": "distributes_negative_incorrectly",
+    "domain": "algebra",
+    "description": "Fails to change every sign when distributing a negative.",
+    "behavioral_signatures": [
+      "changes only the first sign",
+      "leaves internal signs unchanged"
+    ],
+    "prerequisites": [
+      "integer_signs",
+      "distributive_property"
+    ]
+  },
+  {
+    "misconception_id": "moves_term_without_sign_change",
+    "domain": "algebra",
+    "description": "Moves a term across the equals sign without applying the inverse operation.",
+    "behavioral_signatures": [
+      "same sign after moving term"
+    ],
+    "prerequisites": [
+      "inverse_operations",
+      "equation_balance"
+    ]
+  },
+  {
+    "misconception_id": "combines_unlike_terms",
+    "domain": "algebra",
+    "description": "Combines terms with different variables or powers.",
+    "behavioral_signatures": [
+      "adds coefficients of unlike terms"
+    ],
+    "prerequisites": [
+      "like_terms"
+    ]
+  },
+  {
+    "misconception_id": "adds_denominators",
+    "domain": "fractions",
+    "description": "Adds numerators and denominators directly.",
+    "behavioral_signatures": [
+      "a/b + c/d becomes (a+c)/(b+d)"
+    ],
+    "prerequisites": [
+      "equivalent_fractions",
+      "common_denominator"
+    ]
+  },
+  {
+    "misconception_id": "inverts_wrong_fraction",
+    "domain": "fractions",
+    "description": "When dividing fractions, inverts the dividend or both fractions.",
+    "behavioral_signatures": [
+      "incorrect keep-change-flip application"
+    ],
+    "prerequisites": [
+      "reciprocal",
+      "fraction_multiplication"
+    ]
+  },
+  {
+    "misconception_id": "ratio_order_reversed",
+    "domain": "fractions",
+    "description": "Reverses the requested order in a ratio.",
+    "behavioral_signatures": [
+      "reports B:A when asked for A:B"
+    ],
+    "prerequisites": [
+      "ratio_order"
+    ]
+  }
+]
