@@ -1,0 +1,12 @@
+﻿data/test/
+*.private.jsonl
+runs/
+results.tsv
+run.log
+*.run.log
+__pycache__/
+*.pyc
+.env
+
+.pytest_cache/
+.venv/
