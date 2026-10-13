@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Learner Agent Benchmark Case",
+  "type": "object",
+  "required": [
+    "case_id",
+    "domain",
+    "concept",
+    "question",
+    "correct_answer",
+    "profile_id",
+    "active_misconceptions",
+    "missing_prerequisites",
+    "expected_behavior",
+    "forbidden_behavior"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "domain": {
+      "enum": [
+        "sets",
+        "algebra",
+        "fractions"
+      ]
+    },
+    "concept": {
+      "type": "string"
+    },
+    "question": {
+      "type": "string"
+    },
+    "correct_answer": {
+      "type": [
+        "string",
+        "array",
+        "number"
+      ]
+    },
+    "profile_id": {
+      "type": "string"
+    },
+    "active_misconceptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_prerequisites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expected_behavior": {
+      "type": "object",
+      "required": [
+        "correctness_probability",
+        "confidence_band",
+        "hint_probability",
+        "acceptable_error_patterns"
+      ],
+      "properties": {
+        "correctness_probability": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "confidence_band": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "hint_probability": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "acceptable_error_patterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "required_reasoning_features": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "forbidden_behavior": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metadata": {
+      "type": "object"
+    }
+  }
+}
