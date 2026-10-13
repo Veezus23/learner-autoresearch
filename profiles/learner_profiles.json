@@ -1,0 +1,92 @@
+[
+  {
+    "profile_id": "weak_low_conf",
+    "mastery_level": "weak",
+    "mastery_range": [
+      0.0,
+      0.35
+    ],
+    "confidence_level": "low",
+    "confidence_range": [
+      0.0,
+      0.35
+    ],
+    "hint_tendency": "high",
+    "description": "Often answers incorrectly, is uncertain, and is relatively willing to ask for help."
+  },
+  {
+    "profile_id": "weak_high_conf",
+    "mastery_level": "weak",
+    "mastery_range": [
+      0.0,
+      0.35
+    ],
+    "confidence_level": "high",
+    "confidence_range": [
+      0.7,
+      1.0
+    ],
+    "hint_tendency": "low",
+    "description": "Often answers incorrectly but may strongly defend a misconception."
+  },
+  {
+    "profile_id": "medium_low_conf",
+    "mastery_level": "medium",
+    "mastery_range": [
+      0.4,
+      0.7
+    ],
+    "confidence_level": "low",
+    "confidence_range": [
+      0.0,
+      0.35
+    ],
+    "hint_tendency": "medium_high",
+    "description": "Has partial knowledge but may hesitate, request hints, or abandon correct reasoning."
+  },
+  {
+    "profile_id": "medium_high_conf",
+    "mastery_level": "medium",
+    "mastery_range": [
+      0.4,
+      0.7
+    ],
+    "confidence_level": "high",
+    "confidence_range": [
+      0.7,
+      1.0
+    ],
+    "hint_tendency": "low_medium",
+    "description": "Often attempts independently and may be correct or confidently apply an incomplete rule."
+  },
+  {
+    "profile_id": "strong_low_conf",
+    "mastery_level": "strong",
+    "mastery_range": [
+      0.75,
+      1.0
+    ],
+    "confidence_level": "low",
+    "confidence_range": [
+      0.0,
+      0.35
+    ],
+    "hint_tendency": "medium",
+    "description": "Usually reasons correctly but expresses uncertainty and may unnecessarily seek confirmation."
+  },
+  {
+    "profile_id": "strong_high_conf",
+    "mastery_level": "strong",
+    "mastery_range": [
+      0.75,
+      1.0
+    ],
+    "confidence_level": "high",
+    "confidence_range": [
+      0.7,
+      1.0
+    ],
+    "hint_tendency": "low",
+    "description": "Usually answers correctly, explains clearly, and rarely requests help."
+  }
+]
