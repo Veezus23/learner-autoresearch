@@ -1,6 +1,6 @@
 # Learner Agent Benchmark V0
 
-Phase 1 benchmark for evaluating simulated learner agents.
+Benchmark for evaluating simulated learner agents.
 
 ## Goal
 
